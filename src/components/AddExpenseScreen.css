@@ -1,0 +1,7 @@
+.expense-form {
+  width: 100%;
+}
+
+.expense-form .form-group:last-of-type {
+  margin-bottom: var(--spacing-xl);
+}

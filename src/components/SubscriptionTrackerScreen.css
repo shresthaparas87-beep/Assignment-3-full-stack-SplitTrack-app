@@ -1,0 +1,65 @@
+.subscriptions-list {
+  margin-bottom: var(--spacing-xl);
+}
+
+.subscription-card {
+  padding: var(--spacing-lg);
+}
+
+.subscription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.subscription-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.subscription-icon {
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.subscription-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.subscription-cycle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.subscription-cost {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.subscription-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.subscription-renewal {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.add-subscription-btn {
+  margin-top: var(--spacing-md);
+}

@@ -1,0 +1,89 @@
+.welcome-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.welcome-content {
+  padding: var(--spacing-xl);
+  text-align: center;
+  width: 100%;
+}
+
+.logo-container {
+  margin-bottom: var(--spacing-lg);
+}
+
+.logo {
+  font-size: 4rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.app-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.app-tagline {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.welcome-illustration {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  justify-content: center;
+}
+
+.illustration-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  flex: 1;
+  max-width: 120px;
+}
+
+.illustration-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.illustration-card p {
+  color: white;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.welcome-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.welcome-buttons .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: white;
+}
+
+.welcome-buttons .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

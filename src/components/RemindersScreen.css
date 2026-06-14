@@ -1,0 +1,61 @@
+.reminders-list {
+  margin-bottom: var(--spacing-xl);
+}
+
+.reminder-card {
+  padding: var(--spacing-lg);
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.reminder-info {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  flex: 1;
+}
+
+.reminder-icon {
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.reminder-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.reminder-note {
+  font-size: 0.875rem;
+  color: var(--danger-color);
+  margin-bottom: 0.25rem;
+}
+
+.reminder-due {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.reminder-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.reminder-actions .btn {
+  flex: 1;
+  min-width: 120px;
+}
