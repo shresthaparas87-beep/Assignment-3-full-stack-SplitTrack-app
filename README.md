@@ -7,7 +7,7 @@ SplitTrack is a shared expense and subscription tracker for students living in s
 - **Frontend:** React + Vite, deployed to Vercel.
 - **Backend:** Python FastAPI service, deployable to Render/Railway/Fly.io or another Python-friendly cloud host.
 - **Database:** Supabase PostgreSQL, accessed only from the backend using environment variables.
-- **Security:** Supabase keys are not hardcoded in frontend code. The frontend only stores the public backend URL in `VITE_API_BASE_URL`. Sensitive database credentials are kept in backend environment variables.
+- **Security:** Supabase keys are not hardcoded in frontend code. 
 
 ## Key Features
 
@@ -31,7 +31,6 @@ cd backend
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env
 ```
 
 Fill in `.env`:
@@ -115,18 +114,6 @@ SplitTrack_Assessment3_Project/
 ├── package.json
 └── README.md
 ```
-
-## GitHub and Demo Video Checklist
-
-For the Assignment 3 video, show:
-
-1. The live Vercel URL in the browser address bar.
-2. A full user workflow: sign up, set up household, add expense, add subscription, view dashboard/reminders.
-3. Supabase Table Editor showing newly saved rows.
-4. Architecture explanation: React frontend -> Python FastAPI backend -> Supabase database.
-5. Environment variables in Vercel/backend host without exposing actual keys.
-6. GitHub repository structure and `.gitignore`.
-
 ## Notes for Marking
 
 The backend includes a local fallback so the app still runs if Supabase environment variables are missing. For the submitted demo, the deployed backend should use Supabase credentials through environment variables so the marker can see real database persistence.
